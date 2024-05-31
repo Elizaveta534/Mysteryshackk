@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <title>Игра</title>
+    <link rel="stylesheet" href="css/game.css">
+    <script src="js/game.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Limelight&display=swap">
+</head>
+<body>
+    <div id="headertext">
+        <br>
+        <h1>тайна заброшенной хижины</h1>
+        <p>В глубине леса, вдали от цивилизации, стоит заброшенная хижина.<br>
+        Говорят, что она принадлежала отшельнику, который внезапно исчез много лет назад.<br>
+        Местные жители избегают этого места, утверждая, что там происходят странные вещи.<br>
+        Вы — детектив, известный своими расследованиями загадочных дел.<br>
+        Получив анонимное письмо с просьбой расследовать исчезновения,<br>
+        связанные с этой хижиной, вы отправляетесь в лес.
+        </p>
+        <div class="container">
+            <p id="typeNameText">Как тебя зовут?</p>
+        </div>
+        <input type="text" id="nameInput" name="storyInput"><br>
+        <input class="storyButton" id="submitName" type="button" value="готово" onclick="submitName();" /><br>
+    </div>
+    <div id="textblock">
+        <p id="storytext">Default content</p>
+    </div>
+    <input class="storyButton" id="leave" type="button" value="Сначала осмотрюсь" onclick="leave();" />
+    <input class="storyButton" id="stay" type="button" value="Войду внутрь" onclick="stay();" />
+    <input class="storyButton" id="run" type="button" value="Зайти в сарай" onclick="run();" />
+    <input class="storyButton" id="wait" type="button" value="Осмотреть колодец" onclick="wait();" />
+    <input class="storyButton" id="nap" type="button" value="Изучить бумаги" onclick="nap();" />
+    <input class="storyButton" id="explore" type="button" value="Посмотреть другие комнаты" onclick="explore();" />
+    <input class="storyButton" id="drink" type="button" value="Воспользоваться артефактом" onclick="drink();" />
+    <input class="storyButton" id="decline" type="button" value="Выкинуть артефакт" onclick="decline();" />
+    <button class="storyButton"  id="artifactLink" style="display:none;" onclick="openArtifactLink()">Забрать приз!</button>
+</body>
+</html>
